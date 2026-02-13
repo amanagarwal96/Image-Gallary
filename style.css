@@ -1,0 +1,30 @@
+#heading{
+  text-align: center;
+  font-size: 3rem;
+}
+.imagecontainer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  
+  gap: 30px;
+  place-items: center;
+ 
+  
+}
+
+.image{
+  height: 300px;
+  width: 300px;
+  
+  border-radius: 10px;
+  
+            filter: grayscale(100%);
+}
+
+
+.image:hover{
+  border: 1px solid #000;
+  transform: scale(1.1);
+
+            filter: grayscale(0%);
+}
