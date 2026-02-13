@@ -5,7 +5,6 @@
 .imagecontainer{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  
   gap: 30px;
   place-items: center;
  
@@ -15,16 +14,15 @@
 .image{
   height: 300px;
   width: 300px;
-  
   border-radius: 10px;
-  
-            filter: grayscale(100%);
+  filter: grayscale(100%);
+  position: relative;
+  overflow: hidden;
 }
 
 
 .image:hover{
   border: 1px solid #000;
   transform: scale(1.1);
-
-            filter: grayscale(0%);
+  filter: grayscale(40%);
 }
